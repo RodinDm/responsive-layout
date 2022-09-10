@@ -1,125 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Layout</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="page-header">
+            <h1>Student Name</h1>
 
-    <header class="navigation-header">
-        <div class="header-nav-block">
-            <div>
-                <h1>Student Name</h1>
-            </div>
-            <div>
-                <nav class="navigation-panel-top">
-                    <ul>
-                        <li><a href="#top">home</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#contact-and-footer">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        
-        <div class="about-page">
-            <div>
-                <figure>
+            <nav class="nav-top">
+                <ul>
+                    <li><a href="#top">home</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact-and-footer">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-section">
+                <figure class="about-section-image">
                     <img src="./images/responsive-layout-profile.png" alt="">
                 </figure>
-            </div>
-            <div class="about-page-text">
-                <p>Hi! i'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-            </div>
-        </div>
-    </header>
-    
-    <main>
 
-        <h2>PORTFOLIO</h2>
-        <section id="portfolio">
-            <div class="portfolio-card">
-                <div class="portfolio-image">
-                    <figure>
+                <div class="about-section-text">
+                    <p>Hi! i'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+                </div>
+            </section>
+
+            <section id="portfolio" class="portfolio-section">
+                <h2>Portfolio</h2>
+
+                <div class="portfolio-cards">
+                    <div class="portfolio-card">
                         <img src="./images/portfolio-1.png" alt="">
-                    </figure>
+
+                        <h3>Marketing Page</h3>
+
+                        <p>This project shows the frontpage of a marketing website meant fo a specific business i'm interested in.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="./images/portfolio-2.png" alt="">
+                        <h3>Search Page</h3>
+                        <p>This project search through a specific database to find information that the user is trying to look up.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="./images/portfolio-3.png" alt="">
+                        <h3>Travel App</h3>
+                        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="./images/portfolio-4.png" alt="">
+                        <h3>Map of Favorites Spots</h3>
+                        <p>This project uses mapping apis to plot points for my favorite spots in the city for do-it-yourself walking tour.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="./images/portfolio-5.png" alt="">
+                        <h3>Photo Gallery</h3>
+                        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="./images/portfolio-6.png" alt="">
+                        <h3>Calculator</h3>
+                        <p>Someone can either in the numbers they want, and press the big blue button and get result.</p>
+                    </div>
                 </div>
-                <div class="portfolio-text">
-                    <h2>Marketing Page</h2>
-                    <p>This project shows the frontpage of a marketing website meant fo a specific business i'm interested in.</p>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Contact</h2>
+                <p>If you're interested in chatting or want more information about what i've been working on, i'd love to hear it from you!</p>
+                <div class="contact-info">
+                    <span>Phone</span><a href="tel:+11115551234">+1 (111) 555-1234</a>
                 </div>
-            </div>
-            <div class="portfolio-card"> 
-                <figure>
-                    <img src="./images/portfolio-2.png" alt="">
-                </figure>
-                <h2>Search Page</h2>
-                <p>This project search through a specific database to find information that the user is trying to look up.</p>
-            </div>
-            <div class="portfolio-card">
-                <figure>
-                    <img src="./images/portfolio-3.png" alt="">
-                </figure>
-                <h2>Travel App</h2>
-                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-            </div>
-            <div class="portfolio-card">
-                <figure>
-                    <img src="./images/portfolio-4.png" alt="">
-                </figure>
-                <h2>Map of Favorites Spots</h2>
-                <p>This project uses mapping apis to plot points for my favorite spots in the city for do-it-yourself walking tour.</p>
-            </div>
-            <div class="portfolio-card">
-                <figure>
-                    <img src="./images/portfolio-5.png" alt="">
-                </figure>
-                <h2>Photo Gallery</h2>
-                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-            </div>
-            <div class="portfolio-card">
-                <figure>
-                    <img src="./images/portfolio-6.png" alt="">
-                </figure>
-                <h2>Calculator</h2>
-                <p>Someone can either in the numbers they want, and press the big blue button and get result.</p>
-            </div>
-        </section>
+                <div class="contact-info">
+                    <span>Email</span><a href="mailto:email@yoursite.com">email@yoursite.com</a>
+                </div>
+            </section>
+        </main>
 
-    </main>
+        <footer class="page-footer">
+            <h2>Student name</h2>
 
-
-    <section id="contact-and-footer">
-        <div class="contact-info-window">
-            <h2>CONTACT</h2>
-            <p>If you're interested in chatting or want more information about what i've been working on, i'd love to hear it from you!</p>
-            <div class="contact-info">
-                <span>Phone</span><a href="tel:+11115551234">+1 (111) 555-1234</a>
-            </div>
-            <div class="contact-info">
-                <span>Email</span><a href="mailto:email@yoursite.com">email@yoursite.com</a>
-            </div>
-        </div>
-        <footer>
-            <div class="footer-nav">
-                <nav class="navigation-panel-bottom">
-                    <h3>Student name</h3>
-                    <ul>
-                        <li><a href="#top">back to top</a></li>
-                        <li><a href="#top">home</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#contact-and-footer">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="nav-bottom">
+                <ul>
+                    <li><a href="#top">back to top</a></li>
+                    <li><a href="#top">home</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact-and-footer">contact</a></li>
+                </ul>
+            </nav>
         </footer>
-    </section>
-
-</body>
+    </body>
 </html>
